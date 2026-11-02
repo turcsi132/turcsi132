@@ -1,0 +1,7 @@
+# Az Xcode-projektet az XcodeGen generálja a project.yml-ből
+*.xcodeproj
+HelyiIdegenvezeto/Info.plist
+xcuserdata/
+DerivedData/
+.DS_Store
+build/

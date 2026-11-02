@@ -1,0 +1,39 @@
+# XcodeGen projektleíró. Generálás:  brew install xcodegen && xcodegen generate
+name: HelyiIdegenvezeto
+options:
+  bundleIdPrefix: com.turcsi132
+  deploymentTarget:
+    iOS: "17.0"
+  developmentLanguage: hu
+
+targets:
+  HelyiIdegenvezeto:
+    type: application
+    platform: iOS
+    sources:
+      - path: HelyiIdegenvezeto
+    info:
+      path: HelyiIdegenvezeto/Info.plist
+      properties:
+        CFBundleDisplayName: Idegenvezető
+        CFBundleDevelopmentRegion: hu
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        # Háttérben futás: helymeghatározás + hang (felolvasás navigáció mellett)
+        UIBackgroundModes:
+          - location
+          - audio
+        NSLocationWhenInUseUsageDescription: >-
+          A helyzeted alapján mesélünk a közeli látnivalókról, épületekről és történelmi helyszínekről.
+        NSLocationAlwaysAndWhenInUseUsageDescription: >-
+          Háttérben is figyeljük a helyzetedet, hogy navigáció vagy zárolt képernyő mellett is
+          elmondhassuk, milyen érdekes helyek mellett haladsz el.
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.turcsi132.HelyiIdegenvezeto
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
