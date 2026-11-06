@@ -1,0 +1,8 @@
+## Interface: 11507, 20504, 40402, 50500, 110207
+## Title: Konnyu Horgasz
+## Notes: Egygombos horgaszas: ugyanaz a gomb dobja be a csalit es huzza ki a halat.
+## Author: turcsi132
+## Version: 1.0.0
+## SavedVariables: KonnyuHorgaszDB
+
+KonnyuHorgasz.lua
